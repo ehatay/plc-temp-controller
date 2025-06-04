@@ -44,7 +44,6 @@ def plotCombined(files, max_samples=2300):
         ax.plot(x, SP, label='PID.SP', color='green', linestyle='--')
         ax.plot(x, ERR, label='PID.ERR (Original)', color='orange', linestyle=':')
         ax.plot(x, OUT, label='PID.OUT', color='purple', linestyle='-.')
-        #ax.plot(x, squared_errors, label='Squared Error ($(Temp - SP)^2$)', color='brown', linestyle='-') 
 
         ax.plot([], [], ' ', label=f'PID.KP = {KP:.2f}')
         ax.plot([], [], ' ', label=f'PID.KI = {KI:.2f}')
